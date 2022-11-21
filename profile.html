@@ -9,7 +9,7 @@
   </head>
   <body>
     <header><h1>Quiz App</h1></header>
-    <main class="main-content">
+    <main>
       <section class="profile">
         <div class="profile__wrapper">
           <img
@@ -29,8 +29,8 @@
           Excepturi, eligendi molestias.
         </p>
       </section>
-      <div class="counter-wrapper">
-        <article class="counter">
+      <ul class="counter-list" role="list">
+        <li class="counter">
           <svg viewbox="0 0 24 24" class="counter__image">
             <path
               fill="currentColor"
@@ -38,8 +38,8 @@
             />
           </svg>
           <p class="counter__text">12</p>
-        </article>
-        <article class="counter">
+        </li>
+        <li class="counter">
           <svg
             viewbox="0 0 56.868 56.868"
             class="counter__image"
@@ -53,12 +53,21 @@
           </svg>
 
           <p class="counter__text">4</p>
-        </article>
-      </div>
-      <div class="darkmode-wrapper">
-        Dark Mode
-        <button type="button" class="darkmode-button">Dark Mode Switch</button>
-      </div>
+        </li>
+      </ul>
+      <section>
+        <h2>Settings</h2>
+        <form class="profile__settings" aria-labelledby="title">
+          <input
+            type="checkbox"
+            id="switch-darkmode"
+            class="profile__settings-darkmode-input"
+          />
+          <label for="switch-darkmode" class="profile__settings-darkmode-label"
+            >Toggle Darkmode</label
+          >
+        </form>
+      </section>
     </main>
     <nav class="navigation">
       <a href="/" class="navigation__link" aria-label="go to home page">
