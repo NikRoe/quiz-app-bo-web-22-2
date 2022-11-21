@@ -71,3 +71,44 @@ a {
   height: 100%;
   text-align: center;
 }
+
+.main-content {
+  max-width: 500px;
+  margin: 16px auto;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.profile__image {
+  position: unset;
+}
+
+.counter-wrapper {
+  display: flex;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  border-radius: 14px;
+  border: 1px solid black;
+}
+
+.counter__image {
+  position: unset;
+}
+
+.darkmode-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  border-radius: 14px;
+  border: 1px solid black;
+}
