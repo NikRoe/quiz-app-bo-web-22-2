@@ -11,7 +11,11 @@
     <header><h1>Quiz App</h1></header>
     <main class="main-content">
       <section class="profile">
-        <img src="#" alt="profile image" class="profile__image" />
+        <img
+          src="https://source.unsplash.com/random/200x100"
+          alt="profile image"
+          class="profile__image"
+        />
         <h2>Max Doe</h2>
       </section>
       <h3>About me</h3>
@@ -23,11 +27,32 @@
       </p>
       <div class="counter-wrapper">
         <article class="counter">
-          <img src="#" alt="question-counter" class="counter__image" />
+          <svg
+            style="width: 24px; height: 24px"
+            viewbox="0 0 24 24"
+            class="counter__image"
+          >
+            <path
+              fill="currentColor"
+              d="M10,19H13V22H10V19M12,2C17.35,2.22 19.68,7.62 16.5,11.67C15.67,12.67 14.33,13.33 13.67,14.17C13,15 13,16 13,17H10C10,15.33 10,13.92 10.67,12.92C11.33,11.92 12.67,11.33 13.5,10.67C15.92,8.43 15.32,5.26 12,5A3,3 0 0,0 9,8H6A6,6 0 0,1 12,2Z"
+            />
+          </svg>
           <p class="counter__text">12</p>
         </article>
         <article class="counter">
-          <img src="#" alt="bookmark-counter" class="counter__image" />
+          <svg
+            viewbox="0 0 56.868 56.868"
+            xml:space="preserve"
+            class="counter__image"
+            fill="black"
+            stroke="black"
+          >
+            <path
+              d="M46.934,0.011V0h-36.91c-3.358,0-6.09,2.731-6.09,6.09v50.778l19-12.666l19,12.666V32v-7V14h2v11h9V6.136
+	C52.934,2.819,50.262,0.096,46.934,0.011z"
+            />
+          </svg>
+
           <p class="counter__text">4</p>
         </article>
       </div>
@@ -37,8 +62,64 @@
     </main>
     <footer>
       <nav>
-        <a href="/">Home</a><a href="/bookmarks.html">Bookmarks</a
-        ><a href="/profile.html">Profile</a>
+        <a href="/"
+          ><svg
+            viewbox="0 0 58.365 58.365"
+            xml:space="preserve"
+            class="nav__icon"
+          >
+            <path
+              d="M57.863,26.632l-8.681-8.061V5.365h-10v3.921L29.182,0L0.502,26.632c-0.404,0.376-0.428,1.009-0.052,1.414
+         c0.375,0.404,1.008,0.427,1.414,0.052l3.319-3.082v33.349h16h16h16V25.015l3.319,3.082c0.192,0.179,0.437,0.267,0.681,0.267
+         c0.269,0,0.536-0.107,0.732-0.319C58.291,27.641,58.267,27.008,57.863,26.632z M41.182,7.365h6v9.349l-6-5.571V7.365z
+          M23.182,56.365V35.302c0-0.517,0.42-0.937,0.937-0.937h10.126c0.517,0,0.937,0.42,0.937,0.937v21.063H23.182z M51.182,56.365h-14
+         V35.302c0-1.62-1.317-2.937-2.937-2.937H24.119c-1.62,0-2.937,1.317-2.937,2.937v21.063h-14V23.158l22-20.429l14.28,13.26
+         l5.72,5.311v0l2,1.857V56.365z"
+            /></svg></a
+        ><a href="/bookmarks.html"
+          ><svg
+            viewbox="0 0 56.868 56.868"
+            xml:space="preserve"
+            class="nav__icon"
+          >
+            <path
+              d="M52.934,6.136c0-3.324-2.684-6.053-6-6.126V0h-36.91c-3.358,0-6.09,2.731-6.09,6.09v50.778l19-12.666l19,12.666V25h11V6.136
+         z M39.934,53.132l-17-11.334l-17,11.334V6.09c0-2.255,1.835-4.09,4.09-4.09H42.04c-0.983,0.962-1.682,2.212-1.965,3.611
+         l-0.001,0.003c-0.045,0.222-0.08,0.448-0.103,0.677C39.947,6.524,39.934,6.761,39.934,7v18V53.132z M50.934,23h-9V7
+         c0-0.34,0.035-0.671,0.1-0.992c0.387-1.89,1.858-3.399,3.728-3.855c0.036-0.009,0.068-0.025,0.104-0.032
+         c0.243-0.054,0.498-0.073,0.753-0.089c0.083-0.005,0.162-0.024,0.246-0.025c2.246,0.037,4.069,1.881,4.069,4.129V23z"
+            /></svg></a
+        ><a href="/profile.html"
+          ><svg class="nav__icon" viewbox="0 0 32 32" xml:space="preserve">
+            <circle
+              cx="16"
+              cy="16"
+              fill="none"
+              r="15"
+              stroke="#000000"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              stroke-width="2"
+            />
+            <path
+              d="M26,27L26,27   c0-5.523-4.477-10-10-10h0c-5.523,0-10,4.477-10,10v0"
+              fill="none"
+              stroke="#000000"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              stroke-width="2"
+            />
+            <circle
+              cx="16"
+              cy="11"
+              fill="none"
+              r="6"
+              stroke="#000000"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              stroke-width="2"
+            /></svg
+        ></a>
       </nav>
     </footer>
   </body>

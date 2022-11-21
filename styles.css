@@ -8,6 +8,10 @@ body {
   background-color: #eee;
 }
 
+main {
+  margin-bottom: 48px;
+}
+
 h1 {
   text-align: center;
   padding: 10px;
@@ -26,10 +30,22 @@ article {
   gap: 30px;
 }
 
-img {
+.question-card__button {
   position: absolute;
   top: -10px;
   right: 15px;
+  padding: 0;
+  border: none;
+  color: white;
+}
+
+.question-card__image {
+  width: 20px;
+  height: 20px;
+}
+
+.active {
+  color: black;
 }
 
 button {
@@ -55,14 +71,22 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
+  background-color: #eee;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
-  padding: 10px;
+  align-items: center;
   height: 48px;
   border-top: 2px solid black;
+}
+
+.nav__icon {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
 }
 
 a {
@@ -72,9 +96,13 @@ a {
   text-align: center;
 }
 
+a:hover {
+  background-color: slategray;
+}
+
 .main-content {
   max-width: 500px;
-  margin: 16px auto;
+  margin: 48px auto;
 }
 
 .profile {
@@ -85,6 +113,8 @@ a {
 
 .profile__image {
   position: unset;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
 }
 
 .counter-wrapper {
@@ -96,10 +126,12 @@ a {
   flex-direction: row;
   border-radius: 14px;
   border: 1px solid black;
+  padding: 5px;
 }
 
 .counter__image {
   position: unset;
+  width: 30px;
 }
 
 .darkmode-wrapper {
