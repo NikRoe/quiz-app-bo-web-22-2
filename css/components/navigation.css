@@ -1,0 +1,34 @@
+/* nav */
+
+.navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 48px;
+  border-top: 2px solid black;
+}
+
+.navigation__link {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.navigation__link:hover {
+  background-color: slategray;
+}
+
+.navigation__icon {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  fill: white;
+  stroke: black;
+}

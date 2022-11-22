@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header><h1>Quiz App</h1></header>
+    <header><h1 class="headline" id="headline">Quiz App</h1></header>
     <main>
       <!-- first card -->
 
-      <article>
+      <article class="question-card">
         <button class="bookmark" aria-label="bookmark" type="button">
           <svg
             viewbox="0 0 56.868 56.868"
@@ -24,9 +24,11 @@
             />
           </svg>
         </button>
-        <h2>What does HTML stand for</h2>
-        <button type="button">Show Answer</button>
-        <p>HyperText Markup Language</p>
+        <h2 class="question-card__question">What does HTML stand for</h2>
+        <button type="button" class="question-card__button-answer">
+          Show Answer
+        </button>
+        <p class="question-card__answer">HyperText Markup Language</p>
         <ul role="list">
           <li>#html</li>
         </ul>
@@ -34,7 +36,7 @@
 
       <!-- second card -->
 
-      <article>
+      <article class="question-card">
         <button class="bookmark" aria-label="bookmark" type="button">
           <svg viewbox="0 0 56.868 56.868" class="bookmark__image">
             <path
@@ -43,9 +45,13 @@
             />
           </svg>
         </button>
-        <h2>What property flips the axes in flexbox?</h2>
-        <button type="button">Show Answer</button>
-        <p>flex-direction</p>
+        <h2 class="question-card__question">
+          What property flips the axes in flexbox?
+        </h2>
+        <button type="button" class="question-card__button-answer">
+          Show Answer
+        </button>
+        <p class="question-card__answer--visible">flex-direction</p>
         <ul role="list">
           <li>#html</li>
           <li>#flexbox</li>
